@@ -26,6 +26,9 @@ def data(num_of_images=40,width=105,height=105):
     
     if(num_of_images>batch_size):
         exit()
+    else: 
+        print(Counter(train_output))
+        
 
     train_left_input = np.zeros((num_of_images//2,width,height,3))
     train_right_input = np.zeros((num_of_images//2,width,height,3))
