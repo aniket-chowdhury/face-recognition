@@ -14,6 +14,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
 
+# HACKTOBERFEST ? PULL REQ1 :) vasi why not remove all commented code?
 # while 1:
     # ret, img = cap.read()
 img = cv2.imread('image.jpg')
