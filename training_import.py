@@ -36,6 +36,8 @@ if not os.path.exists(path):
     os.makedirs(path)
 
 filepath = path + "model.h5"
+print(filepath)
+#adding logger
 
 from keras.callbacks import EarlyStopping
 
@@ -50,7 +52,7 @@ network.compile(optimizer=Adam(lr=lr),loss='binary_crossentropy',metrics=['mae',
 train = network.fit([train_left_input,train_right_input],train_output,epochs=epochs,callbacks=callbacks_list,validation_split=0.20)
 
 print(filepath)
-
+#adding logger
 import pickle
 
 if not os.path.exists('traininghistory/'):
